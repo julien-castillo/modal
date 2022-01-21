@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+  font-family: poppins;
+ background: linear-gradient(147.3deg, #6FFFC2 0.86%, rgba(57, 218, 218, 0.93) 54.63%, rgba(29, 142, 142, 0.93) 99.57%);
+  color: black;
+}
+a{
+  color: #000;
+}
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.25);
+  inset: 0;
+  z-index: 99999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window > div {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2.2em;
+  background: #fff;
+  border-radius: 1rem;
+}
+.modal-window header {
+  font-weight: bold;
+}
+.modal-window h1 {
+  font-size: 151%;
+  margin: 0 0 15px;
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+.modal-close:hover {
+  color: black;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal-window > div {
+  border-radius: 1rem;
+}
+
+.modal-window div:not(:last-of-type) {
+  margin-bottom: 18px;
+}
+
+
+.btn {
+  background-color: white;
+  padding: 1em;
+  border-radius: 1.3rem;
+  text-decoration: none;
+  transition: .3s all;
+  border: 3px solid transparent;
+  
+}
+.btn:hover{
+  background: #fcfcfc;
+  border: 3px solid gray;
+}
